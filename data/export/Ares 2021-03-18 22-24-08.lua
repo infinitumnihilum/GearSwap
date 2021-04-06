@@ -1,0 +1,16 @@
+sets.exported={
+    main="Tauret",
+    sub="Sandung",
+    ammo="Aurgelmir Orb",
+    head="Wh. Rarab Cap +1",
+    body={ name="Qaaxo Harness", augments={'Attack+15','Evasion+15','"Dbl.Atk."+2',}},
+    legs="Mummu Kecks +2",
+    feet="Fajin Boots",
+    neck="Wiglen Gorget",
+    waist="Windbuffet Belt +1",
+    left_ear="Sherida Earring",
+    right_ear="Telos Earring",
+    left_ring="Sheltered Ring",
+    right_ring="Paguroidea Ring",
+    back="Shadow Mantle",
+}

@@ -1,0 +1,111 @@
+<spellcast>
+  <sets>
+    <group name="exported">
+      <set name="exported">
+        <Body>Tantra Cyclas +2</Body>
+        <Waist>Black Belt</Waist>
+        <Head>Uk'uxkaj Cap</Head>
+        <Neck>Twilight Torque</Neck>
+        <Ammo>Demonry Stone</Ammo>
+        <Body>Otro. Harness +1</Body>
+        <Left_Ring>Shadow Ring</Left_Ring>
+        <Feet>Daihanshi Habaki</Feet>
+        <Hands>Anch. Gloves +1</Hands>
+        <Legs>Qaaxo Tights</Legs>
+        <Back>Engulfer Cape</Back>
+        <Left_Ring>Defending Ring</Left_Ring>
+        <Left_Ear>Bloodgem Earring</Left_Ear>
+        <Neck>Lavalier +1</Neck>
+        <Ammo>Iron Gobbet</Ammo>
+        <Body>Hes. Cyclas</Body>
+        <feet>hesychast's sandals +1</feet>
+        <Legs>Hes. Hose +1</Legs>
+        <Left_Ring>Meridian Ring</Left_Ring>
+        <Left_Ear>Brutal Earring</Left_Ear>
+        <Hands>Hes. Gloves +1</Hands>
+        <Back>Shadow Mantle</Back>
+        <Left_Ring>K'ayres Ring</Left_Ring>
+        <Body>Otronif Harness</Body>
+        <Left_Ring>Dark Ring</Left_Ring>
+        <NUM1>magic dmg. taken -3%</NUM1>
+        <NUM2>spell interruption rate down -5%</NUM2>
+        <NUM3>phys. dmg. taken -6%</NUM3>
+        <Feet>Otronif Boots</Feet>
+        <Hands>Otronif Gloves</Hands>
+        <Legs>Otronif Brais</Legs>
+        <Left_Ear>Steelflash Earring</Left_Ear>
+        <Neck>Wiglen Gorget</Neck>
+        <Ammo>Thew Bomblet</Ammo>
+        <Back>Anchoret's Mantle</Back>
+        <Body>Mel. Cyclas +2</Body>
+        <Feet>Hermes' Sandals</Feet>
+        <Head>Felistris Mask</Head>
+        <Left_Ring>Sheltered Ring</Left_Ring>
+        <Left_Ring>Paguroidea Ring</Left_Ring>
+        <Left_Ear>Bladeborn Earring</Left_Ear>
+        <Hands>Hes. Gloves</Hands>
+        <Head>Usk. Somen +1</Head>
+        <Neck>Asperity Necklace</Neck>
+        <Body>Thaumas Coat</Body>
+        <Legs>Usukane Hizayoroi</Legs>
+        <Back>Atheling Mantle</Back>
+        <Ammo>Tantra Tathlum</Ammo>
+        <Waist>Chaac Belt</Waist>
+        <Left_Ear>Loquac. Earring</Left_Ear>
+        <Head>Haruspex Hat</Head>
+        <Hands>Thaumas Gloves</Hands>
+        <Ammo>Impatiens</Ammo>
+        <Neck>Magoraga Beads</Neck>
+        <Waist>Caudata Belt</Waist>
+        <Left_Ring>Ifrit Ring</Left_Ring>
+        <Head>Whirlpool Mask</Head>
+        <Ammo>Honed Tathlum</Ammo>
+        <Neck>Light Gorget</Neck>
+        <Feet>Qaaxo Leggings</Feet>
+        <Back>Letalis Mantle</Back>
+        <Left_Ring>Epona's Ring</Left_Ring>
+        <Body>Manibozho Jerkin</Body>
+        <Feet>Manibozho boots</Feet>
+        <Back>Buquwik Cape</Back>
+        <Left_Ear>Moonshade Earring</Left_Ear>
+        <Left_Ring>Spiral Ring</Left_Ring>
+        <Legs>Manibozho Brais</Legs>
+        <Neck>Rancor Collar</Neck>
+        <Hands>Manibozho Gloves</Hands>
+        <Left_Ear>Hecate's Earring</Left_Ear>
+        <Head>Wayfarer Circlet</Head>
+        <Neck>Stoicheion Medal</Neck>
+        <Body>Wayfarer Robe</Body>
+        <Legs>Nahtirah Trousers</Legs>
+        <Left_Ring>Demon's Ring</Left_Ring>
+        <Left_Ear>Friomisi Earring</Left_Ear>
+        <Waist>Thunder Belt</Waist>
+        <Back>Toro Cape</Back>
+        <Left_Ring>Acumen Ring</Left_Ring>
+        <Ammo>Sonia's Plectrum</Ammo>
+        <Feet>Otronif Boots +1</Feet>
+        <Back>Iximulew Cape</Back>
+        <Feet>Mel. Gaiters +2</Feet>
+        <Feet>Anch. Gaiters</Feet>
+        <Head>Mel. Crown +2</Head>
+        <Back>Tuilha Cape</Back>
+        <Head>Anchor. Crown +1</Head>
+        <Feet>Tantra Gaiters +2</Feet>
+        <Body>Temple Cyclas</Body>
+        <Feet>Thur. Boots +1</Feet>
+        <feet>k'ayres ring sandals</feet>
+        <Waist>Windbuffet Belt</Waist>
+        <Left_Ring>Rajas Ring</Left_Ring>
+        <Feet>Usk. Sune-Ate +1</Feet>
+        <Waist>Anguinus Belt</Waist>
+        <Neck>Ej Necklace</Neck>
+        <Body>Qaaxo Harness</Body>
+        <Left_Ring>Patricius Ring</Left_Ring>
+        <Legs>Anchorite's Hose</Legs>
+        <Head>Ejekamal Mask</Head>
+        <feet>anchorite's sandals +1</feet>
+        <Head>Oce. Headpiece +1</Head>
+      </set>
+    </group>
+  </sets>
+</spellcast>

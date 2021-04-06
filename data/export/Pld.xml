@@ -1,0 +1,114 @@
+<spellcast>
+  <sets>
+    <group name="exported">
+      <set name="exported">
+        <Sub>Anahera Sword</Sub>
+        <Sub>Beatific Shield +1</Sub>
+        <Left_Ear>Bloodgem Earring</Left_Ear>
+        <Head>Rev. Coronet</Head>
+        <Neck>Twilight Torque</Neck>
+        <Ammo>Demonry Stone</Ammo>
+        <Body>Cab. Surcoat</Body>
+        <Feet>Cab. Leggings</Feet>
+        <Legs>Osmium Cuisses</Legs>
+        <Left_Ring>Shadow Ring</Left_Ring>
+        <Left_Ear>Creed Earring</Left_Ear>
+        <Hands>Rev. Gauntlets +1</Hands>
+        <Waist>Creed Baudrier</Waist>
+        <Back>Engulfer Cape</Back>
+        <Left_Ring>Defending Ring</Left_Ring>
+        <Left_Ear>Buckler Earring</Left_Ear>
+        <Neck>Lavalier +1</Neck>
+        <Ammo>Iron Gobbet</Ammo>
+        <Legs>Rev. Breeches +1</Legs>
+        <Left_Ring>Dark Ring</Left_Ring>
+        <NUM1>magic dmg. taken -3%</NUM1>
+        <NUM2>spell interruption rate down -5%</NUM2>
+        <NUM3>phys. dmg. taken -6%</NUM3>
+        <waist>nierenschutze</waist>
+        <Back>Shadow Mantle</Back>
+        <Head>Twilight Helm</Head>
+        <Body>Twilight Mail</Body>
+        <Waist>Nierenschutz</Waist>
+        <Back>Weard Mantle</Back>
+        <Left_Ring>Meridian Ring</Left_Ring>
+        <Legs>Crimson Cuisses</Legs>
+        <Neck>Creed Collar</Neck>
+        <Back>Fierabras's Mantle</Back>
+        <Left_Ring>Sheltered Ring</Left_Ring>
+        <Head>Ares' Mask +1</Head>
+        <Neck>Coatl Gorget +1</Neck>
+        <Ammo>Incantor Stone</Ammo>
+        <Feet>Ares' Sollerets +1</Feet>
+        <Body>Ares' Cuirass +1</Body>
+        <Legs>Ares' Flanchard +1</Legs>
+        <Sub>Buramenk'ah</Sub>
+        <Hands>Ares' Gauntlets +1</Hands>
+        <Left_Ring>Saida Ring</Left_Ring>
+        <Head>Cab. Coronet</Head>
+        <Feet>Creed Sabatons +2</Feet>
+        <Feet>Xaddi Boots</Feet>
+        <Left_Ring>Aquasoul Ring</Left_Ring>
+        <Left_Ring>Levia. Ring</Left_Ring>
+        <Legs>Cab. Breeches +1</Legs>
+        <Hands>Cab. Gauntlets</Hands>
+        <waist></waist>
+        <Legs>Cizin Breeches +1</Legs>
+        <Ammo>Jukukik Feather</Ammo>
+        <Left_Ear>Steelflash Earring</Left_Ear>
+        <Head>Yaoyotl Helm</Head>
+        <Body>Gorney Haubert +1</Body>
+        <Feet>Ejekamal Boots</Feet>
+        <Left_Ring>Patricius Ring</Left_Ring>
+        <Left_Ear>Bladeborn Earring</Left_Ear>
+        <Hands>Buremte Gloves</Hands>
+        <Back>Atheling Mantle</Back>
+        <Left_Ring>Rajas Ring</Left_Ring>
+        <Left_Ear>Hecate's Earring</Left_Ear>
+        <Neck>Eddy Necklace</Neck>
+        <Left_Ring>K'ayres Ring</Left_Ring>
+        <Left_Ear>Friomisi Earring</Left_Ear>
+        <Waist>Caudata Belt</Waist>
+        <Back>Toro Cape</Back>
+        <Left_Ring>Shiva Ring</Left_Ring>
+        <Hands>Cizin Mufflers</Hands>
+        <Head>Otomi Helm</Head>
+        <Left_Ear>Moonshade Earring</Left_Ear>
+        <Body>Phorcys Korazin</Body>
+        <Left_Ring>Vexer Ring</Left_Ring>
+        <Left_Ring>Cho'j Band</Left_Ring>
+        <Waist>Light Belt</Waist>
+        <Neck>Light Gorget</Neck>
+        <Left_Ear>Brutal Earring</Left_Ear>
+        <Waist>Chaac Belt</Waist>
+        <Ammo>Sonia's Plectrum</Ammo>
+        <Left_Ring>Asklepian Ring</Left_Ring>
+        <Back>Iximulew Cape</Back>
+        <Left_Ear>Loquac. Earring</Left_Ear>
+        <Left_Ring>Prolix Ring</Left_Ring>
+        <Head>Cizin Helm</Head>
+        <Legs>Enif Cosciales</Legs>
+        <Waist>Siegel Sash</Waist>
+        <Sub>Killedar Shield</Sub>
+        <Waist>Fucho-no-Obi</Waist>
+        <Waist>Cetl Belt</Waist>
+        <Neck>Asperity Necklace</Neck>
+        <Waist>Dynamic Belt +1</Waist>
+        <Left_Ear>Heartseeker Earring</Left_Ear>
+        <Left_Ear>Dudgeon Earring</Left_Ear>
+        <Waist>Zoran's Belt</Waist>
+        <Waist>Austerity Belt</Waist>
+        <Left_Ring>Paguroidea Ring</Left_Ring>
+        <Back>Repulse Mantle</Back>
+        <Neck>Colossus's Torque</Neck>
+        <Waist>Olympus Sash</Waist>
+        <Waist>Goading Belt</Waist>
+        <Neck>Invidia Torque</Neck>
+        <Head>Adaman Barbuta</Head>
+        <Left_Ear>Hospitaler Earring</Left_Ear>
+        <Waist>Chuq'aba Belt</Waist>
+        <Left_Ring>Kunaji Ring</Left_Ring>
+      </set>
+    </group>
+  </sets>
+</spellcast>

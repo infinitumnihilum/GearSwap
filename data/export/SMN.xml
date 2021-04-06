@@ -1,0 +1,100 @@
+<spellcast>
+  <sets>
+    <group name="exported">
+      <set name="exported">
+        <Left_Ear>Loquac. Earring</Left_Ear>
+        <Head>Hagondes Hat</Head>
+        <Neck>Twilight Torque</Neck>
+        <Body>Vanir Cotehardie</Body>
+        <Feet>Hagondes Sabots</Feet>
+        <Legs>Bokwus Slops</Legs>
+        <Left_Ring>Shadow Ring</Left_Ring>
+        <Left_Ear>Gifted Earring</Left_Ear>
+        <Hands>Yaoyotl Gloves</Hands>
+        <Waist>Fucho-no-Obi</Waist>
+        <Back>Umbra Cape</Back>
+        <Left_Ring>Defending Ring</Left_Ring>
+        <Neck>Wiglen Gorget</Neck>
+        <Body>Hagondes Coat</Body>
+        <Legs>Hagondes Pants</Legs>
+        <Main>Earth Staff</Main>
+        <Left_Ring>Dark Ring</Left_Ring>
+        <NUM1>magic dmg. taken -3%</NUM1>
+        <NUM2>spell interruption rate down -5%</NUM2>
+        <NUM3>phys. dmg. taken -6%</NUM3>
+        <Neck>Caller's Pendant</Neck>
+        <Ammo>Seraphicaller</Ammo>
+        <Head>Caller's Horn +2</Head>
+        <Left_Ring>Evoker's Ring</Left_Ring>
+        <Hands>Serpentes Cuffs</Hands>
+        <Hands>Regimen Mittens</Hands>
+        <Legs>Convoker's Spats</Legs>
+        <Waist>Kuku Stone</Waist>
+        <Back>Samanisi Cape</Back>
+        <Head>Convoker's Horn</Head>
+        <Feet>Con. Pigaches</Feet>
+        <Sub>Achaq Grip</Sub>
+        <Left_Ring>Sangoma Ring</Left_Ring>
+        <Legs>Nares Trews</Legs>
+        <Body>Glyphic Doublet</Body>
+        <Main>Gridarvor</Main>
+        <Left_Ring>Sheltered Ring</Left_Ring>
+        <Feet>Herald's Gaiters</Feet>
+        <Legs>Summoner's Spats</Legs>
+        <Sub>Genbu's Shield</Sub>
+        <Sub>Bolelabunga</Sub>
+        <Body>Call. Doublet +2</Body>
+        <Main>Soulscourge</Main>
+        <Feet>Caller's Pgch. +2</Feet>
+        <Hands>Glyphic Bracers</Hands>
+        <Legs>Mdk. Shalwar +1</Legs>
+        <Left_Ring>Fervor Ring</Left_Ring>
+        <Head>Glyphic Horn</Head>
+        <Hands>Call. Bracers +2</Hands>
+        <Left_Ear>Steelflash Earring</Left_Ear>
+        <Head>Nahtirah Hat</Head>
+        <Neck>Asperity Necklace</Neck>
+        <Back>Pahtli Cape</Back>
+        <Left_Ring>K'ayres Ring</Left_Ring>
+        <Left_Ear>Bladeborn Earring</Left_Ear>
+        <Waist>Cascade Belt</Waist>
+        <Body>Convo. Doublet</Body>
+        <Feet>Chelona Boots +1</Feet>
+        <Left_Ring>Rajas Ring</Left_Ring>
+        <Waist>Witful Belt</Waist>
+        <Legs>Orvail Pants +1</Legs>
+        <Waist>Siegel Sash</Waist>
+        <Back>Swith Cape +1</Back>
+        <Left_Ring>Prolix Ring</Left_Ring>
+        <Head>Zelus Tiara</Head>
+        <Hands>Bokwus Gloves</Hands>
+        <Waist>Goading Belt</Waist>
+        <Waist>Austerity Belt</Waist>
+        <Main>Chatoyant Staff</Main>
+        <Left_Ring>Paguroidea Ring</Left_Ring>
+        <Sub>Wizzan Grip</Sub>
+        <Neck>Stoicheion Medal</Neck>
+        <waist></waist>
+        <Back>Toro Cape</Back>
+        <Main>Lehbrailg +2</Main>
+        <Left_Ear>Friomisi Earring</Left_Ear>
+        <Left_Ring>Acumen Ring</Left_Ring>
+        <Left_Ring>Icesoul Ring</Left_Ring>
+        <Left_Ear>Hecate's Earring</Left_Ear>
+        <Neck>Aesir Torque</Neck>
+        <Feet>Bokwus boots</Feet>
+        <waist>fuchi-no-obi</waist>
+        <Left_Ear>Lifestorm Earring</Left_Ear>
+        <Left_Ring>Excelsis Ring</Left_Ring>
+        <Left_Ear>Psystorm Earring</Left_Ear>
+        <Body>Heka's Kalasiris</Body>
+        <Sub>Tamaxchi</Sub>
+        <Left_Ring>Sirona's Ring</Left_Ring>
+        <Waist>Diabolos's Rope</Waist>
+        <Main>Eminent Pole</Main>
+        <Legs>Caller's Spats +2</Legs>
+        <Hands>Carbuncle Mitts</Hands>
+      </set>
+    </group>
+  </sets>
+</spellcast>

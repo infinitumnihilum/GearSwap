@@ -1,0 +1,17 @@
+sets.exported={
+    main="Masamune",
+    sub="Pole Grip",
+    range={ name="Cibitshavore", augments={'STR+12','Rng.Acc.+10','"Store TP"+7',}},
+    head="Flam. Zucchetto +2",
+    body="Ken. Samue +1",
+    hands={ name="Sakonji Kote +3", augments={'Enhances "Blade Bash" effect',}},
+    legs="Ken. Hakama +1",
+    feet="Danzo Sune-Ate",
+    neck="Wiglen Gorget",
+    waist="Ioskeha Belt +1",
+    left_ear="Brutal Earring",
+    right_ear="Cessance Earring",
+    left_ring="Sheltered Ring",
+    right_ring="Warp Ring",
+    back="Shadow Mantle",
+}

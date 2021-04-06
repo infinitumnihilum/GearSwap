@@ -1,0 +1,79 @@
+<spellcast>
+  <sets>
+    <group name="exported">
+      <set name="exported">
+        <Left_Ear>Steelflash Earring</Left_Ear>
+        <Head>Yaoyotl Helm</Head>
+        <Neck>Twilight Torque</Neck>
+        <Ammo>Demonry Stone</Ammo>
+        <Body>Otro. Harness +1</Body>
+        <Feet>Otronif Boots</Feet>
+        <Legs>Kari. Brayettes +1</Legs>
+        <Left_Ring>Shadow Ring</Left_Ring>
+        <Left_Ear>Bladeborn Earring</Left_Ear>
+        <Hands>Otronif Gloves</Hands>
+        <Waist>Flume Belt</Waist>
+        <Back>Engulfer Cape</Back>
+        <Left_Ring>Defending Ring</Left_Ring>
+        <Head>Twilight Helm</Head>
+        <Body>Twilight Mail</Body>
+        <Left_Ring>Paguroidea Ring</Left_Ring>
+        <Hands>Buremte Gloves</Hands>
+        <Back>Shadow Mantle</Back>
+        <Ammo>Iron Gobbet</Ammo>
+        <Left_Ring>Dark Ring</Left_Ring>
+        <NUM1>magic dmg. taken -3%</NUM1>
+        <NUM2>spell interruption rate down -5%</NUM2>
+        <NUM3>phys. dmg. taken -6%</NUM3>
+        <Neck>Wiglen Gorget</Neck>
+        <Feet>Danzo Sune-Ate</Feet>
+        <Left_Ring>Sheltered Ring</Left_Ring>
+        <Sub>Pole Grip</Sub>
+        <Neck>Asperity Necklace</Neck>
+        <Ammo>Thew Bomblet</Ammo>
+        <Legs>Phorcys Dirs</Legs>
+        <Back>Atheling Mantle</Back>
+        <Main>Tsurumaru</Main>
+        <Feet>Unkai Sune-Ate +2</Feet>
+        <Feet>Sakonji Sune-Ate</Feet>
+        <Hands>Unkai Kote +2</Hands>
+        <Head>Myochin Kabuto</Head>
+        <Hands>Sakonji Kote</Hands>
+        <Waist>Caudata Belt</Waist>
+        <Legs>Gor. Brayettes +1</Legs>
+        <Left_Ring>Rajas Ring</Left_Ring>
+        <Left_Ear>Moonshade Earring</Left_Ear>
+        <Body>Phorcys Korazin</Body>
+        <Back>Letalis Mantle</Back>
+        <Left_Ear>Brutal Earring</Left_Ear>
+        <Left_Ring>Spiral Ring</Left_Ring>
+        <Feet>Kar. Sollerets +1</Feet>
+        <Neck>Light Gorget</Neck>
+        <Waist>Light Belt</Waist>
+        <Neck>Thunder Gorget</Neck>
+        <Waist>Thunder Belt</Waist>
+        <waist>dark belt</waist>
+        <neck>dark gorget</neck>
+        <Ammo>Sonia's Plectrum</Ammo>
+        <Feet>Otronif Boots +1</Feet>
+        <Back>Iximulew Cape</Back>
+        <Waist>Windbuffet Belt</Waist>
+        <Legs>Unkai Haidate +2</Legs>
+        <Body>Gorney Haubert +1</Body>
+        <Left_Ring>K'ayres Ring</Left_Ring>
+        <waist>windbuffett belt</waist>
+        <Waist>Goading Belt</Waist>
+        <Left_Ring>Beeline Ring</Left_Ring>
+        <Ammo>Honed Tathlum</Ammo>
+        <Body>Otronif Harness</Body>
+        <Back>Ik Cape</Back>
+        <Back>Takaha Mantle</Back>
+        <Body>Unkai Domaru +2</Body>
+        <back>takaha mantle mantle</back>
+		<feet>Gigantes boots +1</feet>
+		<hands>Wakido kote +1</hands>
+		<head>Sukeroku Hachi.</head>
+      </set>
+    </group>
+  </sets>
+</spellcast>

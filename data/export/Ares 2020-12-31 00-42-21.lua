@@ -1,0 +1,17 @@
+sets.exported={
+    main={ name="Masamune", augments={'Path: A',}},
+    sub="Utu Grip",
+    ammo="Knobkierrie",
+    head={ name="Valorous Mask", augments={'Accuracy+20 Attack+20','Weapon skill damage +3%','STR+5',}},
+    body="Flamma Korazin +2",
+    hands={ name="Valorous Mitts", augments={'Weapon skill damage +5%','STR+7','Accuracy+13',}},
+    legs="Wakido Haidate +3",
+    feet="Flam. Gambieras +2",
+    neck="Fotia Gorget",
+    waist="Fotia Belt",
+    left_ear="Thrud Earring",
+    right_ear={ name="Moonshade Earring", augments={'Attack+4','TP Bonus +250',}},
+    left_ring="Niqmaddu Ring",
+    right_ring="Warp Ring",
+    back={ name="Smertrios's Mantle", augments={'STR+15','Accuracy+20 Attack+20','STR+5','Weapon skill damage +10%',}},
+}
