@@ -85,7 +85,7 @@ function init_gear_sets()
     sets.precast.WS = {ammo="Yamarang",
         head="Hachiya Hatsuburi +2",neck=gear.ElementalGorget,ear1="Telos Earring",ear2="Odr Earring",
         body="Hizamaru haramaki +2",hands="Mochizuki Tekko",ring1="Rajas Ring",ring2="Epona's Ring",
-        back=gear.NinBack.TP,waist=gear.ElementalBelt,legs="Hizamaru hizayoroi +2",feet="Mochizuki kyahan +3"}
+        back=gear.NinBack.WS,waist=gear.ElementalBelt,legs="Hizamaru hizayoroi +2",feet="Mochizuki kyahan +3"}
     sets.precast.WS.Acc = set_combine(sets.precast.WS, {ammo="Jukukik Feather",hands="Buremte Gloves",
         back=gear.NinBack.TP})
 

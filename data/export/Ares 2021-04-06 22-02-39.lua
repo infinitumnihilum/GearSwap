@@ -1,0 +1,17 @@
+sets.exported={
+    main="Malignance Sword",
+    sub="Aegis",
+    ammo="Iron Gobbet",
+    head={ name="Jumalik Helm", augments={'MND+10','"Mag.Atk.Bns."+15','Magic burst dmg.+10%','"Refresh"+1',}},
+    body="Ares' Cuirass +1",
+    hands={ name="Souv. Handsch. +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
+    legs={ name="Carmine Cuisses +1", augments={'HP+68','STR+11','INT+11',}},
+    feet={ name="Souveran Schuhs +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}},
+    neck="Coatl Gorget +1",
+    waist="Flume Belt +1",
+    left_ear="Creed Earring",
+    right_ear="Ethereal Earring",
+    left_ring="Defending Ring",
+    right_ring="Dim. Ring (Holla)",
+    back={ name="Rudianos's Mantle", augments={'HP+60','Accuracy+20 Attack+20','Accuracy+10','"Store TP"+10','Damage taken-5%',}},
+}

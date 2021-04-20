@@ -51,7 +51,7 @@ function user_setup()
     state.PhysicalDefenseMode:options('Evasion', 'PDT')
 
 
-    gear.default.weaponskill_neck = "Asperity Necklace"
+    gear.default.weaponskill_neck = "Assassin's gorget +1"
     gear.default.weaponskill_waist = "Caudata Belt"
     gear.AugQuiahuiz = {name="Quiahuiz Trousers", augments={'Haste+2','"Snapshot"+2','STR+8'}}
 
@@ -80,12 +80,12 @@ function init_gear_sets()
     sets.Kiting = {feet="Fajin Boots"}
 
     sets.buff['Sneak Attack'] = {ammo="Qirmiz Tathlum",
-        head="Pillager's Bonnet +1",neck="Asperity Necklace",ear1="Sherida earring",ear2="Telos Earring",
+        head="Pillager's Bonnet +1",neck="Assassin's gorget +1",ear1="Sherida earring",ear2="Telos Earring",
         body="Pillager's Vest +3",hands="Adhemar wristbands +1",ring1="Rajas Ring",ring2="Epona's Ring",
         back=gear.ThfBack.TP,waist="Windbuffet Belt +1",legs="Pillager's Culottes +2",feet="Plunderer's Poulaines +1"}
 
     sets.buff['Trick Attack'] = {ammo="Qirmiz Tathlum",
-        head="Pillager's Bonnet +1",neck="Asperity Necklace",ear1="Sherida earring",ear2="Telos Earring",
+        head="Pillager's Bonnet +1",neck="Assassin's gorget +1",ear1="Sherida earring",ear2="Telos Earring",
         body="Pillager's Vest +3",hands="Adhemar wristbands +1",ring1="Stormsoul Ring",ring2="Epona's Ring",
         back=gear.ThfBack.TP,waist="Windbuffet Belt +1",legs="Pillager's Culottes +2",feet="Plunderer's Poulaines +1"}
 
@@ -215,18 +215,18 @@ function init_gear_sets()
 
     -- Specific spells
     sets.midcast.Utsusemi = {
-        head="Adhemar bonnet +1",neck="Ej Necklace",ear2="Loquacious Earring",
+        head="Adhemar bonnet +1",neck="Assassin's gorget +1",ear2="Loquacious Earring",
         body="Pillager's Vest +3",hands="Adhemar wristbands +1",ring1="Beeline Ring",
         back=gear.ThfBack.TP,legs="Kaabnax Trousers",feet="Iuitl Gaiters +1"}
 
     -- Ranged gear
     sets.midcast.RA = {
-        head="Adhemar bonnet +1",neck="Ej Necklace",ear1="Clearview Earring",ear2="Volley Earring",
+        head="Adhemar bonnet +1",neck="Assassin's gorget +1",ear1="Clearview Earring",ear2="Volley Earring",
         body="Iuitl Vest",hands="Iuitl Wristbands",ring1="Beeline Ring",ring2="Hajduk Ring",
         back="Libeccio Mantle",waist="Aquiline Belt",legs="Nahtirah Trousers",feet="Iuitl Gaiters +1"}
 
     sets.midcast.RA.Acc = {
-        head="Pillager's Bonnet +1",neck="Ej Necklace",ear1="Clearview Earring",ear2="Volley Earring",
+        head="Pillager's Bonnet +1",neck="Assassin's gorget +1",ear1="Clearview Earring",ear2="Volley Earring",
         body="Iuitl Vest",hands="Buremte Gloves",ring1="Beeline Ring",ring2="Hajduk Ring",
         back="Libeccio Mantle",waist="Aquiline Belt",legs="Thurandaut Tights +1",feet="Pillager's Poulaines +1"}
 
@@ -261,7 +261,7 @@ function init_gear_sets()
     -- Defense sets
 
     sets.defense.Evasion = {
-        head="Pillager's Bonnet +1",neck="Ej Necklace",
+        head="Pillager's Bonnet +1",neck="Assassin's gorget +1",
         body="Pillager's Vest +3",hands="Adhemar wristbands +1",ring1="Defending Ring",ring2="Beeline Ring",
         back=gear.ThfBack.TP,waist="Flume Belt +1",legs="Kaabnax Trousers",feet="Iuitl Gaiters +1"}
 
@@ -282,32 +282,32 @@ function init_gear_sets()
 
     -- Normal melee group
     sets.engaged = {ammo="Aurgelmir orb",
-        head="Adhemar bonnet +1",neck="Asperity Necklace",ear1="Sherida earring",ear2="Telos Earring",
+        head="Adhemar bonnet +1",neck="Assassin's gorget +1",ear1="Sherida earring",ear2="Telos Earring",
         body="Pillager's Vest +3",hands="Adhemar wristbands +1",ring1="Rajas Ring",ring2="Epona's Ring",
         back=gear.ThfBack.TP,waist="Windbuffet Belt +1",legs="Samnuha Tights",feet="Plunderer's poulaines +1"}
     sets.engaged.Acc = {ammo="Honed Tathlum",
-        head="Adhemar bonnet +1",neck="Ej Necklace",ear1="Sherida earring",ear2="Telos Earring",
+        head="Adhemar bonnet +1",neck="Assassin's gorget +1",ear1="Sherida earring",ear2="Telos Earring",
         body="Pillager's Vest +3",hands="Adhemar wristbands +1",ring1="Rajas Ring",ring2="Epona's Ring",
         back=gear.ThfBack.TP,waist="Windbuffet Belt +1",legs="Pillager's Culottes +2",feet="Plunderer's poulaines +1"}
         
     -- Mod set for trivial mobs (Skadi+1)
     sets.engaged.Mod = {ammo="Aurgelmir orb",
-        head="Adhemar bonnet +1",neck="Asperity Necklace",ear1="Sherida earring",ear2="Telos Earring",
+        head="Adhemar bonnet +1",neck="Assassin's gorget +1",ear1="Sherida earring",ear2="Telos Earring",
         body="Pillager's Vest +3",hands="Adhemar wristbands +1",ring1="Rajas Ring",ring2="Epona's Ring",
         back=gear.ThfBack.TP,waist="Windbuffet Belt +1",legs="Pillager's Culottes +2",feet="Plunderer's poulaines +1"}
 
     -- Mod set for trivial mobs (Thaumas)
     sets.engaged.Mod2 = {ammo="Aurgelmir orb",
-        head="Adhemar bonnet +1",neck="Asperity Necklace",ear1="Sherida earring",ear2="Telos Earring",
+        head="Adhemar bonnet +1",neck="Assassin's gorget +1",ear1="Sherida earring",ear2="Telos Earring",
         body="Pillager's Vest +3",hands="Adhemar wristbands +1",ring1="Rajas Ring",ring2="Epona's Ring",
         back=gear.ThfBack.TP,waist="Windbuffet Belt +1",legs="Pillager's Culottes +2",feet="Plunderer's poulaines +1"}
 
     sets.engaged.Evasion = {ammo="Aurgelmir orb",
-        head="Adhemar bonnet +1",neck="Ej Necklace",ear1="Sherida earring",ear2="Telos Earring",
+        head="Adhemar bonnet +1",neck="Assassin's gorget +1",ear1="Sherida earring",ear2="Telos Earring",
         body="Pillager's Vest +3",hands="Adhemar wristbands +1",ring1="Beeline Ring",ring2="Epona's Ring",
         back="Canny Cape",waist="Windbuffet Belt +1",legs="Pillager's Culottes +2",feet="Plunderer's poulaines +1"}
     sets.engaged.Acc.Evasion = {ammo="Honed Tathlum",
-        head="Adhemar bonnet +1",neck="Ej Necklace",ear1="Sherida earring",ear2="Telos Earring",
+        head="Adhemar bonnet +1",neck="Assassin's gorget +1",ear1="Sherida earring",ear2="Telos Earring",
         body="Pillager's Vest +3",hands="Adhemar wristbands +1",ring1="Beeline Ring",ring2="Epona's Ring",
         back="Canny Cape",waist="Windbuffet Belt +1",legs="Pillager's Culottes +2",feet="Plunderer's poulaines +1"}
 

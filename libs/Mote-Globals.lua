@@ -50,11 +50,16 @@ function define_global_sets()
 	--Nin Back Pieces
 	gear.NinBack={}
 	gear.NinBack.TP = {name="Andartia's mantle", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10',}}
+	gear.NinBack.WS = { name="Andartia's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+5','Weapon skill damage +10%',}}
 	
 	--Thf Back Pieces
 	gear.ThfBack={}
 	gear.ThfBack.TP = {name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Store TP"+10','Damage taken-5%',}}
 	gear.ThfBack.CritWS = {name="Toutatis's Cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+5','Crit.hit rate+10',}}
+	
+	--Pld Back Pieces
+	gear.PldBack={}
+	gear.PldBack.TP = {name="Rudianos's Mantle", augments={'HP+60','Accuracy+20 Attack+20','Accuracy+10','"Store TP"+10','Damage taken-5%',}}
 end
 
 -------------------------------------------------------------------------------------------------------------------

@@ -98,25 +98,25 @@ function init_gear_sets()
     -- Default set for any weaponskill that isn't any more specifically defined
     sets.precast.WS = {ammo="Aurgelmir orb",
         head="Valorous Mask",neck=gear.ElementalGorget,ear1="Moonshade Earring",ear2="Thrud Earring",
-        body="Sulevia's platemail +2",hands="Sulevia's gauntlets +1",ring1="Rajas Ring",ring2="Karieyh Ring",
-        back="Atheling Mantle",waist=gear.ElementalBelt,legs="Souveran diechlings +1",feet="Sulevia's leggings +1"}
+        body="Sulevia's platemail +2",hands="Sulevia's gauntlets +2",ring1="Rajas Ring",ring2="Karieyh Ring",
+        back=gear.PldBack.TP,waist=gear.ElementalBelt,legs="Souveran diechlings +1",feet="Sulevia's leggings +2"}
 
     sets.precast.WS.Acc = {ammo="Aurgelmir orb",
-        head="Valorous Mask",neck=gear.ElementalGorget,ear1="Moonshade Earring",ear2="Cessance Earring",
-        body="Sulevia's platemail +2",hands="Sulevia's gauntlets +1",ring1="Flamma Ring",ring2="Karieyh Ring",
-        back="Atheling Mantle",waist=gear.ElementalBelt,legs="Souveran diechlings +1",feet="Sulevia's leggings +1"}
+        head="Valorous Mask",neck=gear.ElementalGorget,ear1="Moonshade Earring",ear2="Telos earring",
+        body="Sulevia's platemail +2",hands="Sulevia's gauntlets +2",ring1="Flamma Ring",ring2="Karieyh Ring",
+        back=gear.PldBack.TP,waist=gear.ElementalBelt,legs="Souveran diechlings +1",feet="Sulevia's leggings +2"}
 
     -- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found.
     sets.precast.WS['Requiescat'] = set_combine(sets.precast.WS, {ring1="Leviathan Ring",ring2="Aquasoul Ring"})
     sets.precast.WS['Requiescat'].Acc = set_combine(sets.precast.WS.Acc, {ring1="Leviathan Ring"})
 
-    sets.precast.WS['Chant du Cygne'] = set_combine(sets.precast.WS, {hands="Sulevia's gauntlets +1",ear1="Moonshade Earring" ,
+    sets.precast.WS['Chant du Cygne'] = set_combine(sets.precast.WS, {hands="Sulevia's gauntlets +2",ear1="Moonshade Earring" ,
 	ear2="Thrud Earring",back="Rancorous mantle",neck="Fotia Gorget"})
     sets.precast.WS['Chant du Cygne'].Acc = set_combine(sets.precast.WS.Acc, {waist="Fotia Belt"})
 
     sets.precast.WS['Sanguine Blade'] = {ammo="Aurgelmir orb",
         head="Valorous Mask",neck="Eddy Necklace",ear1="Friomisi Earring",ear2="Hecate's Earring",
-        body="Caballarius surcoat +1",hands="Sulevia's gauntlets +1",ring1="Shiva Ring",ring2="Flamma Ring",
+        body="Caballarius surcoat +1",hands="Sulevia's gauntlets +2",ring1="Shiva Ring",ring2="Flamma Ring",
         back="Toro Cape",waist="Caudata Belt",legs="Caballarius breeches +1",feet="Souveran schuhs +1"}
     
     sets.precast.WS['Atonement'] = {ammo="Iron Gobbet",
@@ -127,7 +127,7 @@ function init_gear_sets()
 		sets.precast.WS['Savage Blade'] = {ammo="Iron Gobbet",
         head="Valorous Mask",neck=gear.ElementalGorget,ear1="Thrud Earring",ear2="Moonshade Earring",
         body="Phorcys Korazin",hands="Souveran handschuhs +1",ring1="Rajas Ring",ring2="Vexer Ring",
-        back="Weard Mantle",waist=gear.ElementalBelt,legs="Caballarius breeches +1",feet="Sulevia's leggings +1"}
+        back="Weard Mantle",waist=gear.ElementalBelt,legs="Caballarius breeches +1",feet="Sulevia's leggings +2"}
     
     --------------------------------------
     -- Midcast sets
@@ -149,7 +149,7 @@ function init_gear_sets()
     
     sets.midcast.Cure = {ammo="Iron Gobbet",
         head="Adaman Barbuta",neck="Invidia Torque",ear1="Hospitaler Earring",ear2="Bloodgem Earring",
-        body="Caballarius surcoat +1",hands="Sulevia's gauntlets +1",ring1="Kunaji Ring",ring2="Asklepian Ring",
+        body="Caballarius surcoat +1",hands="Sulevia's gauntlets +2",ring1="Kunaji Ring",ring2="Asklepian Ring",
         back="Fierabras's Mantle",waist="Chuq'aba Belt",legs="Caballarius breeches +1",feet="Souveran schuhs +1"}
 
     sets.midcast['Enhancing Magic'] = {neck="Colossus's Torque",waist="Olympus Sash",legs="Caballarius breeches +1"}
@@ -172,17 +172,17 @@ function init_gear_sets()
     sets.idle = {ammo="Iron Gobbet",
         head="Jumalik Helm",neck="Coatl gorget +1",ear1="Creed Earring",ear2="Ethereal Earring",
         body="Ares' Cuirass +1",hands="Souveran handschuhs +1",ring1="Defending Ring",ring2="Paguroidea Ring",
-        back="Shadow Mantle",waist="Flume Belt +1",legs="Carmine Cuisses +1",feet="Souveran schuhs +1"}
+        back=gear.PldBack.TP,waist="Flume Belt +1",legs="Carmine Cuisses +1",feet="Souveran schuhs +1"}
 
     sets.idle.Town = {main="Maligance sword",ammo="Incantor Stone",
-        head="Sulevia's Mask +2",neck="Coatl gorget +1",ear1="Cessance Earring",ear2="Brutal Earring",
+        head="Sulevia's Mask +2",neck="Coatl gorget +1",ear1="Telos earring",ear2="Brutal Earring",
         body="Ares' Cuirass +1",hands="Souveran handschuhs +1",ring1="Defending Ring",ring2="Paguroidea Ring",
-        back="Shadow Mantle",waist="Flume Belt +1",legs="Carmine Cuisses +1",feet="Souveran schuhs +1"}
+        back=gear.PldBack.TP,waist="Flume Belt +1",legs="Carmine Cuisses +1",feet="Souveran schuhs +1"}
     
     sets.idle.Weak = {ammo="Iron Gobbet",
-        head="Sulevia's Mask +2",neck="Coatl gorget +1",ear1="Cessance Earring",ear2="Brutal Earring",
+        head="Sulevia's Mask +2",neck="Coatl gorget +1",ear1="Telos earring",ear2="Brutal Earring",
         body="Caballarius surcoat +1",hands="Souveran handschuhs +1",ring1="Defending Ring",ring2="Paguroidea Ring",
-        back="Shadow Mantle",waist="Flume Belt +1",legs="Carmine Cuisses +1",feet="Souveran schuhs +1"}
+        back=gear.PldBack.TP,waist="Flume Belt +1",legs="Carmine Cuisses +1",feet="Souveran schuhs +1"}
     
     sets.idle.Weak.Reraise = set_combine(sets.idle.Weak, sets.Reraise)
     
@@ -235,39 +235,39 @@ function init_gear_sets()
     -- Engaged sets
     --------------------------------------
     
-    sets.engaged = {ammo="Hasty Pinion +1",
-        head="Flamma zucchetto +2",neck="Asperity Necklace",ear1="Brutal Earring",ear2="Cessance Earring",
-        body="Sulevia's platemail +2",hands="Sulevia's gauntlets +1",ring1="Moonlight Ring",ring2="Flamma Ring",
-        back="Atheling Mantle",waist="Cetl Belt",legs="Souveran diechlings +1",feet="Sulevia's leggings +1"}
+    sets.engaged = {ammo="Aurgelmir Orb",
+        head="Flamma zucchetto +2",neck="Asperity Necklace",ear1="Brutal Earring",ear2="Telos earring",
+        body="Sulevia's platemail +2",hands="Sulevia's gauntlets +2",ring1="Moonlight Ring",ring2="Flamma Ring",
+        back=gear.PldBack.TP,waist="Sailfi belt +1",legs="Souveran diechlings +1",feet="Souveran schuhs +1"}
 		
-	sets.engaged.DPS = {ammo="Hasty Pinion +1",
-        head="Flamma zucchetto +2",neck="Asperity Necklace",ear1="Brutal Earring",ear2="Cessance Earring",
-        body="Sulevia's platemail +2",hands="Sulevia's gauntlets +1",ring1="Rajas Ring",ring2="Flamma Ring",
-        back="Atheling Mantle",waist="Windbuffet belt +1",legs="Souveran diechlings +1",feet="Ejekamal Boots"}
+	sets.engaged.DPS = {ammo="Aurgelmir Orb",
+        head="Flamma zucchetto +2",neck="Asperity Necklace",ear1="Brutal Earring",ear2="Telos earring",
+        body="Sulevia's platemail +2",hands="Sulevia's gauntlets +2",ring1="Moonlight Ring",ring2="Flamma Ring",
+        back=gear.PldBack.TP,waist="Sailfi belt +1",legs="Sulevia's Cuisses +2",feet="Flamma gambieras +2"}
 
-    sets.engaged.Acc = {ammo="Hasty Pinion +1",
-        head="Flamma zucchetto +2",neck="Asperity Necklace",ear1="Brutal Earring",ear2="Cessance Earring",
-        body="Sulevia's platemail +2",hands="Sulevia's gauntlets +1",ring1="Rajas Ring",ring2="Flamma Ring",
-        back="Weard Mantle",waist="dynamic belt +1",legs="Souveran diechlings +1",feet="Xaddi Boots"}
+    sets.engaged.Acc = {ammo="Aurgelmir Orb",
+        head="Flamma zucchetto +2",neck="Asperity Necklace",ear1="Brutal Earring",ear2="Telos earring",
+        body="Sulevia's platemail +2",hands="Sulevia's gauntlets +2",ring1="Moonlight Ring",ring2="Flamma Ring",
+        back="Weard Mantle",waist="Sailfi belt +1",legs="Souveran diechlings +1",feet="Xaddi Boots"}
 
     sets.engaged.DW = {ammo="Aurgelmir orb",
-        head="Flamma zucchetto +2",neck="Asperity Necklace",ear1="Brutal Earring",ear2="Cessance Earring",
-        body="Sulevia's platemail +2",hands="Sulevia's gauntlets +1",ring1="Rajas Ring",ring2="Flamma Ring",
-        back="Atheling Mantle",waist="Windbuffet belt +1",legs="Souveran diechlings +1",feet="Xaddi Boots"}
+        head="Flamma zucchetto +2",neck="Asperity Necklace",ear1="Brutal Earring",ear2="Telos earring",
+        body="Sulevia's platemail +2",hands="Sulevia's gauntlets +2",ring1="Moonlight Ring",ring2="Flamma Ring",
+        back=gear.PldBack.TP,waist="Sailfi belt +1",legs="Souveran diechlings +1",feet="Xaddi Boots"}
 
     sets.engaged.DW.Acc = {ammo="Aurgelmir orb",
         head="Flamma zucchetto +2",neck="Asperity Necklace",ear1="Dudgeon Earring",ear2="Heartseeker Earring",
-        body="Sulevia's platemail +2",hands="Sulevia's gauntlets +1",ring1="Rajas Ring",ring2="Flamma Ring",
+        body="Sulevia's platemail +2",hands="Sulevia's gauntlets +2",ring1="Moonlight Ring",ring2="Flamma Ring",
         back="Weard Mantle",waist="Zoran's Belt",legs="Souveran diechlings +1",feet="Xaddi Boots"}
 
-    sets.engaged.PDT = set_combine(sets.engaged, {ammo="Hasty Pinion +1",
+    sets.engaged.PDT = set_combine(sets.engaged, {ammo="Aurgelmir Orb",
         head="Sulevia's Mask +2",neck="Twilight Torque",ear1="Creed Earring",ear2="Ethereal Earring",
-        body="Caballarius surcoat +1",hands="Souveran handschuhs +1",ring1="Defending Ring",ring2="MoonLight Ring",
+        body="Caballarius surcoat +1",hands="Souveran handschuhs +1",ring1="Defending Ring",ring2="Moonlight Ring",
         back="Shadow Mantle",waist="Flume Belt +1",legs="Caballarius breeches +1",feet="Souveran schuhs +1"})
     sets.engaged.Acc.PDT = set_combine(sets.engaged.Acc, {body="Caballarius surcoat +1",neck="Twilight Torque",ring1="Defending Ring"})
 	sets.engaged.MDT = {ammo="Demonry Stone",
         head="Sulevia's Mask +2",neck="Twilight Torque",ear1="Creed Earring",ear2="Ethereal Earring",
-        body="Caballarius surcoat +1",hands="Souveran handschuhs +1",ring1="Dark Ring",ring2="Shadow Ring",
+        body="Caballarius surcoat +1",hands="Souveran handschuhs +1",ring1="Defending Ring",ring2="Moonlight Ring",
         back="Engulfer Cape +1",waist="Creed Baudrier",legs="Souveran diechlings +1",feet="Souveran schuhs +1"}
     sets.engaged.Reraise = set_combine(sets.engaged, sets.Reraise)
     sets.engaged.Acc.Reraise = set_combine(sets.engaged.Acc, sets.Reraise)

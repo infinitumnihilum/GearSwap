@@ -65,7 +65,7 @@ function init_gear_sets()
         back="Tuilha Cape",legs="Hizamaru hizayoroi +2",feet="Anchorite's gaiters +3"}
 
     sets.precast.JA['Chakra'] = {ammo="Iron Gobbet",
-        head="Adhemar bonnet +1",
+        head="Genmei kabuto",
         body="Temple Cyclas",hands="Hes. Gloves +1",ring1="Spiral Ring",
         back="Segomo's mantle",waist="Caudata Belt",legs="Hizamaru hizayoroi +2",feet="Thurandaut Boots +1"}
 

@@ -1,0 +1,15 @@
+sets.exported={
+    main={ name="Kikoku", augments={'Path: A',}},
+    sub="Achiuchikapu",
+    ammo="Seki Shuriken",
+    head={ name="Adhemar Bonnet +1", augments={'DEX+12','AGI+12','Accuracy+20',}},
+    body="Hachiya Chain. +2",
+    hands={ name="Adhemar Wrist. +1", augments={'DEX+12','AGI+12','Accuracy+20',}},
+    neck="Wiglen Gorget",
+    waist="Flume Belt +1",
+    left_ear="Eabani Earring",
+    right_ear="Suppanomimi",
+    left_ring="Sheltered Ring",
+    right_ring="Paguroidea Ring",
+    back={ name="Andartia's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+5','Weapon skill damage +10%',}},
+}
