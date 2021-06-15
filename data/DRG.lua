@@ -6,8 +6,10 @@ include('organizer-lib.lua')
 
 -- Initialization function for this job file.
 function get_sets()
-	-- Load and initialize the include file.
-	include('Mote-Include.lua')
+    mote_include_version = 2
+
+    -- Load and initialize the include file.
+    include('Mote-Include.lua')
 end
 
 
@@ -22,20 +24,19 @@ function job_setup()
 -- Setup vars that are user-dependent.  Can override this function in a sidecar file.
 function user_setup()
 	-- Options: Override default values
-	options.OffenseModes = {'Normal', 'Acc', 'Multi'}
-	options.DefenseModes = {'Normal', 'PDT', 'Reraise'}
-	options.WeaponskillModes = {'Normal', 'Acc', 'Att', 'Mod'}
-	options.CastingModes = {'Normal'}
-	options.IdleModes = {'Normal'}
-	options.RestingModes = {'Normal'}
-	options.PhysicalDefenseModes = {'PDT', 'Reraise'}
-	options.MagicalDefenseModes = {'MDT'}
+    state.OffenseMode:options('Normal', 'Acc','Hybrid')
+    state.HybridMode:options('Normal', 'PDT', 'Reraise')
+    state.WeaponskillMode:options('Normal', 'Acc', 'Mod')
+    state.PhysicalDefenseMode:options('PDT', 'Reraise')
 
-	state.Defense.PhysicalMode = 'PDT'
+	--state.Defense.PhysicalMode:options('PDT')
 
 	-- Additional local binds
 	send_command('bind ^` input /ja "Hasso" <me>')
 	send_command('bind !` input /ja "Seigan" <me>')
+
+  
+
 
 	select_default_macro_book(Main)
 end
@@ -61,49 +62,49 @@ function init_gear_sets()
 	-- Precast Sets
 	-- Precast sets to enhance JAs
 	sets.precast.JA.Angon = {ammo="Angon",hands="Wyrm Finger Gauntlets +2"}
-	sets.precast.JA.Jump = {ammo="Thew Bomblet",
-		head="Otomi Helm",neck="Asperity Necklace",ear1="Steelflash Earring",ear2="Bladeborn Earring",
-		body="Enif Corazza",hands="Ogier's Gauntlets",ring1="Rajas Ring",ring2="K'ayres ring",
-		back="Letalis Mantle",waist="Windbuffet Belt",legs="Cizin Breeches",feet="Ejekamal boots"}
+	sets.precast.JA.Jump = {ammo="Aurgelmir orb",
+		head="Flamma zucchetto +2",neck="Vim Torque +1",ear1="Sherida earring",ear2="Telos earring",
+		body="Pteroslaver mail +3",hands="Vishap finger gauntlets +1",ring1="Flamma ring",ring2="Niqmaddu ring",
+		back=gear.DrgBack.TP,waist="Ioskeha belt +1",legs="Flamma dirs +2",feet="Flamma gambieras +2"}
 	sets.precast.JA['Ancient Circle'] = {legs="Drn. Brais +1"}
-	sets.precast.JA['High Jump'] = {ammo="Thew Bomblet",
-		head="Otomi Helm",neck="Asperity Necklace",ear1="Steelflash Earring",ear2="Bladeborn Earring",
-		body="Enif Corazza",hands="Ogier's Gauntlets",ring1="Rajas Ring",ring2="K'ayres ring",
-		back="Letalis Mantle",waist="Windbuffet Belt",legs="Cizin Breeches",feet="Ejekamal boots"}
-	sets.precast.JA['Soul Jump'] = {ammo="Thew Bomblet",
-		head="Otomi Helm",neck="Asperity Necklace",ear1="Steelflash Earring",ear2="Bladeborn Earring",
-		body="Enif Corazza",hands="Ogier's Gauntlets",ring1="Rajas Ring",ring2="K'ayres ring",
-		back="Letalis Mantle",waist="Windbuffet Belt",legs="Cizin Breeches",feet="Ejekamal boots"}
-	sets.precast.JA['Spirit Jump'] = {ammo="Thew Bomblet",
-		head="Otomi Helm",neck="Asperity Necklace",ear1="Steelflash Earring",ear2="Bladeborn Earring",
-		body="Enif Corazza",hands="Ogier's Gauntlets",ring1="Rajas Ring",ring2="K'ayres ring",
-		back="Letalis Mantle",waist="Windbuffet Belt",legs="Cizin Breeches",feet="Lncr. Schynbld. +2"}
-	sets.precast.JA['Super Jump'] = {ammo="Thew Bomblet",
-		head="Otomi Helm",neck="Asperity Necklace",ear1="Steelflash Earring",ear2="Bladeborn Earring",
-		body="Enif Corazza",hands="Ogier's Gauntlets",ring1="Rajas Ring",ring2="K'ayres ring",
-		back="Letalis Mantle",waist="Windbuffet Belt",legs="Cizin Breeches",feet="Ejekamal boots"}
+	sets.precast.JA['High Jump'] = {ammo="Aurgelmir orb",
+		head="Flamma zucchetto +2",neck="Vim Torque +1",ear1="Sherida earring",ear2="Telos earring",
+		body="Pteroslaver mail +3",hands="Vishap finger gauntlets +1",ring1="Flamma ring",ring2="Niqmaddu ring",
+		back=gear.DrgBack.TP,waist="Ioskeha belt +1",legs="Flamma dirs +2",feet="Flamma gambieras +2"}
+	sets.precast.JA['Soul Jump'] = {ammo="Aurgelmir orb",
+		head="Flamma zucchetto +2",neck="Vim Torque +1",ear1="Sherida earring",ear2="Telos earring",
+		body="Pteroslaver mail +3",hands="Vishap finger gauntlets +1",ring1="Flamma ring",ring2="Niqmaddu ring",
+		back=gear.DrgBack.TP,waist="Ioskeha belt +1",legs="Flamma dirs +2",feet="Flamma gambieras +2"}
+	sets.precast.JA['Spirit Jump'] = {ammo="Aurgelmir orb",
+		head="Flamma zucchetto +2",neck="Vim Torque +1",ear1="Sherida earring",ear2="Telos earring",
+		body="Pteroslaver mail +3",hands="Vishap finger gauntlets +1",ring1="Flamma ring",ring2="Niqmaddu ring",
+		back=gear.DrgBack.TP,waist="Ioskeha belt +1",legs="Flamma dirs +2",feet="Lncr. Schynbld. +2"}
+	sets.precast.JA['Super Jump'] = {ammo="Aurgelmir orb",
+		head="Flamma zucchetto +2",neck="Shulmanu Collar",ear1="Sherida earring",ear2="Telos earring",
+		body="Pteroslaver mail +3",hands="Vishap finger gauntlets +1",ring1="Flamma ring",ring2="Niqmaddu ring",
+		back=gear.DrgBack.TP,waist="Ioskeha belt +1",legs="Flamma dirs +2",feet="Flamma gambieras +2"}
 	sets.precast.JA['Spirit Link'] = {hands="Lancer's vambraces +2"}
-	sets.precast.JA['Call Wyvern'] = {body="Wyrm Mail"}
+	sets.precast.JA['Call Wyvern'] = {body="Pteroslaver mail +3"}
 	sets.precast.JA['Deep Breathing'] = {hands="Wyrm Finger Gauntlets +2"}
-	sets.precast.JA['Spirit Surge'] = {body="Wyrm Mail"}
+	sets.precast.JA['Spirit Surge'] = {body="Pteroslaver mail +3"}
 
 	
 	-- Healing Breath sets
-	sets.HB = {ammo="Thew Bomblet",
-		head="Drachen Armet",neck="Asperity Necklace",ear1="Steelflash Earring",ear2="Bladeborn Earring",
-		body="Cizin Mail",hands="Ogier's Gauntlets",ring1="Rajas Ring",ring2="K'ayres ring",
-		back="Letalis Mantle",waist="Windbuffet Belt",legs="Cizin Breeches",feet="Ejekamal boots"}
+	sets.HB = {ammo="Aurgelmir orb",
+		head="Drachen Armet",neck="Shulmanu Collar",ear1="Sherida earring",ear2="Telos earring",
+		body="Cizin Mail",hands="Sulevia's gauntlets +2",ring1="Flamma ring",ring2="Niqmaddu ring",
+		back=gear.DrgBack.TP,waist="Windbuffet Belt",legs="Flamma dirs +2",feet="Flamma gambieras +2"}
 	sets.HB.Pre = {head="Drachen Armet"}
-	sets.HB.Mid = {ammo="Thew Bomblet",
-		head="Wyrm Armet +2",neck="Lancer's Torque",ear1="Steelflash Earring",ear2="Bladeborn Earring",
-		body="Wyvern Mail",hands="Ogier's Gauntlets",ring1="Rajas Ring",ring2="K'ayres ring",
+	sets.HB.Mid = {ammo="Aurgelmir orb",
+		head="Wyrm Armet +2",neck="Dragoon's Collar",ear1="Sherida earring",ear2="Telos earring",
+		body="Wyvern Mail",hands="Despair Finger Gauntlets",ring1="Flamma ring",ring2="Niqmaddu ring",
 		back="Updraft Mantle",waist="Glassblower's Belt",legs="Drn. Brais +1",feet="Wyrm Greaves +2"}
 		
 	-- Waltz set (chr and vit)
 	sets.precast.Waltz = {ammo="Sonia's Plectrum",
-		head="Yaoyotl Helm",
-		body="Mikinaak Breastplate",hands="Buremte Gloves",ring1="Spiral Ring",
-		back="Letalis Mantle",legs="Cizin Breeches",feet="Ejekamal boots"}
+		head="Flamma zucchetto +2",
+		body="Mikinaak Breastplate",hands="Sulevia's gauntlets +2",ring1="Spiral Ring",
+		back=gear.DrgBack.TP,legs="Flamma dirs +2",feet="Flamma gambieras +2"}
 		
 	-- Don't need any special gear for Healing Waltz.
 	sets.precast.Waltz['Healing Waltz'] = {}
@@ -115,13 +116,13 @@ function init_gear_sets()
 	
 	-- Fast cast sets for spells
 	
-	sets.precast.FC = {head="Drachen Armet", legs="Enif Cosciales", neck="Orunmila's Torque",ear2="Loquacious Earring"}
+	sets.precast.FC = {head="Drachen Armet", legs="Enif Cosciales",hands="Leyline gloves", neck="Orunmila's Torque",ear2="Loquacious Earring"}
     
 	-- Midcast Sets
 	sets.midcast.FastRecast = {
 		head="Drachen Armet",
-		body="Mikinaak Breastplate",hands="Ogier's Gauntlets",
-		legs="Enif Cosciales",feet="Ejekamal boots"}	
+		body="Mikinaak Breastplate",hands="Sulevia's gauntlets +2",
+		legs="Enif Cosciales",feet="Flamma gambieras +2"}	
 		
 	-- Weaponskill sets
 	-- Default set for any weaponskill that isn't any more specifically defined
@@ -130,67 +131,70 @@ function init_gear_sets()
 	-- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found.
 	sets.precast.WS['Exenterator'] = set_combine(sets.precast.WS, {})
 
-	sets.precast.WS = {ammo="Cheruski Needle",
-		head="Otomi Helm",neck="Asperity Necklace",ear1="Brutal Earring",ear2="Moonshade Earring",
-		body="Gorney Haubert +1",hands="Lncr. Vmbrc. +2",ring1="Pyrosoul Ring",ring2="Ifrit Ring",
-		back="Atheling Mantle",waist="Windbuffet Belt",legs="Cizin Breeches",feet="Ejekamal boots"}
-	sets.precast.WS.Acc = set_combine(sets.precast.WS, {head="Yaoyotl Helm",back="Letalis Mantle"})
+	sets.precast.WS = {ammo="Knobkierrie",
+		head="Flamma zucchetto +2",neck="Fotia gorget",ear1="Sherida Earring",ear2="Moonshade Earring",
+		body="Sulevia's platemail +2",hands="Sulevia's gauntlets +2",ring1="Niqmaddu Ring",ring2="Karieyh Ring",
+		back=gear.DrgBack.TP,waist="Fotia Belt",legs="Sulevia's cuisses +2",feet="Flamma gambieras +2"}
+		
+	sets.precast.WS.Acc = set_combine(sets.precast.WS, {head="Flamma zucchetto +2",back=gear.DrgBack.TP})
 	
 	-- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found.
-	sets.precast.WS['Stardiver'] = set_combine(sets.precast.WS, {neck="Light Gorget",waist="Light Belt"})
-	sets.precast.WS['Stardiver'].Acc = set_combine(sets.precast.WS.Acc, {neck="Light Gorget",waist="Light Belt"})
-	sets.precast.WS['Stardiver'].Mod = set_combine(sets.precast.WS['Stardiver'], {neck="Light Gorget",waist="Light Belt"})
+	sets.precast.WS['Stardiver'] = set_combine(sets.precast.WS, {neck="Fotia Gorget",waist="Fotia Belt"})
+	sets.precast.WS['Stardiver'].Acc = set_combine(sets.precast.WS.Acc, {neck="Fotia Gorget",waist="Fotia Belt"})
+	sets.precast.WS['Stardiver'].Mod = set_combine(sets.precast.WS['Stardiver'], {neck="Fotia Gorget",waist="Fotia Belt"})
 
-	sets.precast.WS['Drakesbane'] = set_combine(sets.precast.WS, {neck="Light Gorget"})
-	sets.precast.WS['Drakesbane'].Acc = set_combine(sets.precast.WS.Acc, {neck="Light Gorget"})
-	sets.precast.WS['Drakesbane'].Mod = set_combine(sets.precast.WS['Drakesbane'], {waist="Light Belt"})
+	sets.precast.WS['Drakesbane'] = set_combine(sets.precast.WS, {neck="Fotia Gorget"})
+	sets.precast.WS['Drakesbane'].Acc = set_combine(sets.precast.WS.Acc, {neck="Fotia Gorget"})
+	sets.precast.WS['Drakesbane'].Mod = set_combine(sets.precast.WS['Drakesbane'], {waist="Fotia Belt"})
+
+	sets.precast.WS['Sonic Thrust'] = set_combine(sets.precast.WS, {neck="Fotia Gorget"})
 
 
 	
 	-- Sets to return to when not performing an action.
 	
 	-- Resting sets
-	sets.resting = {head="Yaoyotl Helm",neck="Wiglen Gorget",ear1="Bladeborn Earring",ear2="Steelflash Earring",
-		body="Ares' cuirass +1",hands="Ogier's Gauntlets",ring1="Sheltered Ring",ring2="Paguroidea Ring",
-		back="Letalis Mantle",waist="Goading Belt",legs="Crimson Cuisses",feet="Ejekamal boots"}
+	sets.resting = {head="Flamma zucchetto +2",neck="Wiglen Gorget",ear1="Telos earring",ear2="Sherida earring",
+		body="Sulevia's platemail +2",hands="Sulevia's gauntlets +2",ring1="Defending ring",ring2="Paguroidea Ring",
+		back=gear.DrgBack.TP,waist="Ioskeha belt +1",legs="Carmine cuisses +1",feet="Flamma gambieras +2"}
 	
 
 	-- Idle sets
 	sets.idle = {}
 
 	-- Idle sets (default idle set not needed since the other three are defined, but leaving for testing purposes)
-	sets.idle.Town = {main="Upukirex", sub="Pole Grip",ammo="Thew Bomblet",
-		head="Ares' Mask +1",neck="Asperity Necklace",ear1="Bladeborn Earring",ear2="Steelflash Earring",
-		body="Ares' cuirass +1",hands="Ares' gauntlets +1",ring1="Sheltered Ring",ring2="Paguroidea Ring",
-		back="Atheling Mantle",waist="Goading Belt",legs="Crimson Cuisses",feet="Ares' Sollerets +1"}
+	sets.idle.Town = {main="Trishula", sub="Utu Grip",ammo="Aurgelmir orb",
+		head="Sulevia's Mask +2",neck="Shulmanu Collar",ear1="Telos earring",ear2="Sherida earring",
+		body="Sulevia's platemail +2",hands="Sulevia's gauntlets +2",ring1="Defending ring",ring2="Paguroidea Ring",
+		back=gear.DrgBack.TP,waist="Ioskeha belt +1",legs="Carmine cuisses +1",feet="Flamma gambieras +2"}
 	
 	sets.idle.Field = {
-		head="Yaoyotl Helm",neck="Wiglen Gorget",ear1="Bladeborn Earring",ear2="Steelflash Earring",
-		body="Ares' cuirass +1",hands="Ares' gauntlets +1",ring1="Sheltered Ring",ring2="Paguroidea Ring",
-		back="Shadow Mantle",waist="Nierenschutz",legs="Crimson Cuisses",feet="Ejekamal boots"}
+		head="Flamma zucchetto +2",neck="Wiglen Gorget",ear1="Telos earring",ear2="Sherida earring",
+		body="Sulevia's platemail +2",hands="Sulevia's gauntlets +2",ring1="Defending ring",ring2="Paguroidea Ring",
+		back=gear.DrgBack.TP,waist="Ioskeha belt +1",legs="Carmine cuisses +1",feet="Flamma gambieras +2"}
 
 	sets.idle.Weak = {
-		head="Twilight Helm",neck="Wiglen Gorget",ear1="Bladeborn Earring",ear2="Steelflash Earring",
-		body="Twilight Mail",hands="Buremte Gloves",ring1="Sheltered Ring",ring2="Paguroidea Ring",
-		back="Shadow Mantle",waist="Nierenschutz",legs="Cizin Breeches",feet="Ejekamal boots"}
+		head="Twilight Helm",neck="Wiglen Gorget",ear1="Telos earring",ear2="Sherida earring",
+		body="Twilight Mail",hands="Sulevia's gauntlets +2",ring1="Defending ring",ring2="Paguroidea Ring",
+		back=gear.DrgBack.TP,waist="Ioskeha belt +1",legs="Flamma dirs +2",feet="Flamma gambieras +2"}
 	
 	-- Defense sets
-	sets.defense.PDT = {ammo="Thew Bomblet",
-		head="Yaoyotl Helm",neck="Twilight Torque",ear1="Bladeborn Earring",ear2="Steelflash Earring",
-		body="Mekira Meikogai",hands="Ogier's Gauntlets",ring1="Dark Ring",ring2="Dark Ring",
-		back="Letalis Mantle",waist="Goading Belt",legs="Cizin Breeches",feet="Ejekamal boots"}
+	sets.defense.PDT = {ammo="Aurgelmir orb",
+		head="Flamma zucchetto +2",neck="Twilight Torque",ear1="Telos earring",ear2="Sherida earring",
+		body="Mekira Meikogai",hands="Sulevia's gauntlets +2",ring1="Moonlight Ring",ring2="Defending Ring",
+		back=gear.DrgBack.TP,waist="Ioskeha belt +1",legs="Flamma dirs +2",feet="Flamma gambieras +2"}
 
 	sets.defense.Reraise = {
-		head="Twilight Helm",neck="Twilight Torque",ear1="Bladeborn Earring",ear2="Steelflash Earring",
-		body="Twilight Mail",hands="Buremte Gloves",ring1="Dark Ring",ring2="Paguroidea Ring",
-		back="Letalis Mantle",waist="Goading Belt",legs="Cizin Breeches",feet="Ejekamal boots"}
+		head="Twilight Helm",neck="Twilight Torque",ear1="Telos earring",ear2="Sherida earring",
+		body="Twilight Mail",hands="Sulevia's gauntlets +2",ring1="Moonlight Ring",ring2="Paguroidea Ring",
+		back=gear.DrgBack.TP,waist="Ioskeha belt +1",legs="Flamma dirs +2",feet="Flamma gambieras +2"}
 
 	sets.defense.MDT = {ammo="Demonry Stone",
-		head="Yaoyotl Helm",neck="Twilight Torque",ear1="Bladeborn Earring",ear2="Steelflash Earring",
-		body="Mekira Meikogai",hands="Ogier's Gauntlets",ring1="Sheltered Ring",ring2="Paguroidea Ring",
-		back="Engulfer Cape",waist="Goading Belt",legs="Cizin Breeches",feet="Ejekamal boots"}
+		head="Flamma zucchetto +2",neck="Twilight Torque",ear1="Telos earring",ear2="Sherida earring",
+		body="Mekira Meikogai",hands="Sulevia's gauntlets +2",ring1="Defending ring",ring2="Paguroidea Ring",
+		back="Engulfer Cape",waist="Ioskeha belt +1",legs="Flamma dirs +2",feet="Flamma gambieras +2"}
 
-	sets.Kiting = {legs="Crimson Cuisses"}
+	sets.Kiting = {legs="Carmine cuisses +1"}
 
 	sets.Reraise = {head="Twilight Helm",body="Twilight Mail"}
 
@@ -202,80 +206,80 @@ function init_gear_sets()
 	-- EG: sets.engaged.Dagger.Accuracy.Evasion
 	
 	-- Normal melee group
-	sets.engaged = {ammo="Thew bomblet",
-		head="Yaoyotl Helm",neck="Asperity Necklace",ear1="Bladeborn Earring",ear2="Steelflash Earring",
-		body="Enif Corazza",hands="Ares' gauntlets +1",ring1="Rajas Ring",ring2="K'ayres ring",
-		back="Atheling Mantle",waist="Goading Belt",legs="Cizin Breeches",feet="Ejekamal boots"}
-	sets.engaged.Acc = {ammo="Thew Bomblet",
-		head="Yaoyotl Helm",neck="Asperity Necklace",ear1="Bladeborn Earring",ear2="Steelflash Earring",
-		body="Enif Corazza",hands="Ares' gauntlets +1",ring1="Rajas Ring",ring2="K'ayres ring",
-		back="Updraft Mantle",waist="Anguinus belt",legs="Cizin Breeches",feet="Ejekamal boots"}
-	sets.engaged.Multi = {ammo="Thew Bomblet",
-		head="Yaoyotl Helm",neck="Asperity Necklace",ear1="Bladeborn Earring",ear2="Steelflash Earring",
-		body="Enif Corazza",hands="Ares' Gauntlets +1",ring1="Rajas Ring",ring2="K'ayres ring",
-		back="Atheling mantle",waist="Windbuffet Belt",legs="Cizin Breeches",feet="Ejekamal boots"}
-	sets.engaged.Multi.PDT = {ammo="Thew Bomblet",
-		head="Yaoyotl Helm",neck="Asperity Necklace",ear1="Bladeborn Earring",ear2="Steelflash Earring",
-		body="Cizin Mail",hands="Ogier's Gauntlets",ring1="Rajas Ring",ring2="Mars's Ring",
-		back="Letalis Mantle",waist="Dynamic Belt",legs="Cizin Breeches",feet="Cizin Graves"}
-	sets.engaged.Multi.Reraise = {ammo="Thew Bomblet",
-		head="Twilight Helm",neck="Asperity Necklace",ear1="Bladeborn Earring",ear2="Steelflash Earring",
-		body="Twilight Breastplate",hands="Ogier's Gauntlets",ring1="Rajas Ring",ring2="Mars's Ring",
-		back="Letalis Mantle",waist="Dynamic Belt",legs="Cizin Breeches",feet="Ejekamal boots"}
-	sets.engaged.PDT = {ammo="Thew Bomblet",
-		head="Yaoyotl Helm",neck="Twilight Torque",ear1="Bladeborn Earring",ear2="Steelflash Earring",
-		body="Mikinaak Breastplate",hands="Ogier's Gauntlets",ring1="Dark Ring",ring2="Dark Ring",
-		back="Mollusca Mantle",waist="Dynamic Belt",legs="Cizin Breeches",feet="Ejekamal boots"}
-	sets.engaged.Acc.PDT = {ammo="Thew Bomblet",
-		head="Yaoyotl Helm",neck="Twilight Torque",ear1="Bladeborn Earring",ear2="Steelflash Earring",
-		body="Mikinaak Breastplate",hands="Ogier's Gauntlets",ring1="Dark Ring",ring2="Dark Ring",
-		back="Mollusca Mantle",waist="Dynamic Belt",legs="Cizin Breeches",feet="Ejekamal boots"}
-	sets.engaged.Reraise = {ammo="Thew Bomblet",
-		head="Twilight Helm",neck="Torero Torque",ear1="Bladeborn Earring",ear2="Steelflash Earring",
-		body="Twilight Mail",hands="Ogier's Gauntlets",ring1="Dark Ring",ring2="Dark Ring",
-		back="Letalis Mantle",waist="Dynamic Belt",legs="Cizin Breeches",feet="Ejekamal boots"}
-	sets.engaged.Acc.Reraise = {ammo="Thew Bomblet",
-		head="Twilight Helm",neck="Torero Torque",ear1="Bladeborn Earring",ear2="Steelflash Earring",
-		body="Twilight Mail",hands="Ogier's Gauntlets",ring1="Dark Ring",ring2="Dark Ring",
-		back="Letalis Mantle",waist="Dynamic Belt",legs="Cizin Breeches",feet="Ejekamal boots"}
+	sets.engaged = {ammo="Aurgelmir orb",
+		head="Flamma zucchetto +2",neck="Vim Torque +1",ear1="Telos earring",ear2="Sherida earring",
+		body="Sulevia's platemail +2",hands="Sulevia's gauntlets +2",ring1="Flamma ring",ring2="Niqmaddu ring",
+		back=gear.DrgBack.TP,waist="Ioskeha belt +1",legs="Flamma dirs +2",feet="Flamma gambieras +2"}
+	sets.engaged.Acc = {ammo="Aurgelmir orb",
+		head="Flamma zucchetto +2",neck="Shulmanu Collar",ear1="Telos earring",ear2="Sherida earring",
+		body="Sulevia's platemail +2",hands="Sulevia's gauntlets +2",ring1="Flamma ring",ring2="Niqmaddu ring",
+		back="Updraft Mantle",waist="Anguinus belt",legs="Flamma dirs +2",feet="Flamma gambieras +2"}
+	sets.engaged.Multi = {ammo="Aurgelmir orb",
+		head="Flamma zucchetto +2",neck="Shulmanu Collar",ear1="Telos earring",ear2="Sherida earring",
+		body="Sulevia's platemail +2",hands="Sulevia's gauntlets +2",ring1="Flamma ring",ring2="Niqmaddu ring",
+		back=gear.DrgBack.TP,waist="Windbuffet Belt",legs="Flamma dirs +2",feet="Flamma gambieras +2"}
+	sets.engaged.Multi.PDT = {ammo="Aurgelmir orb",
+		head="Flamma zucchetto +2",neck="Shulmanu Collar",ear1="Telos earring",ear2="Sherida earring",
+		body="Cizin Mail",hands="Sulevia's gauntlets +2",ring1="Flamma ring",ring2="Niqmaddu ring",
+		back=gear.DrgBack.TP,waist="Dynamic Belt",legs="Flamma dirs +2",feet="Cizin Graves"}
+	sets.engaged.Multi.Reraise = {ammo="Aurgelmir orb",
+		head="Twilight Helm",neck="Shulmanu Collar",ear1="Telos earring",ear2="Sherida earring",
+		body="Twilight Breastplate",hands="Sulevia's gauntlets +2",ring1="Flamma ring",ring2="Niqmaddu ring",
+		back=gear.DrgBack.TP,waist="Dynamic Belt",legs="Flamma dirs +2",feet="Flamma gambieras +2"}
+	sets.engaged.PDT = {ammo="Aurgelmir orb",
+		head="Flamma zucchetto +2",neck="Twilight Torque",ear1="Telos earring",ear2="Sherida earring",
+		body="Mikinaak Breastplate",hands="Sulevia's gauntlets +2",ring1="Moonlight Ring",ring2="Defending Ring",
+		back="Mollusca Mantle",waist="Dynamic Belt",legs="Flamma dirs +2",feet="Flamma gambieras +2"}
+	sets.engaged.Acc.PDT = {ammo="Aurgelmir orb",
+		head="Flamma zucchetto +2",neck="Twilight Torque",ear1="Telos earring",ear2="Sherida earring",
+		body="Mikinaak Breastplate",hands="Sulevia's gauntlets +2",ring1="Moonlight Ring",ring2="Defending Ring",
+		back="Mollusca Mantle",waist="Dynamic Belt",legs="Flamma dirs +2",feet="Flamma gambieras +2"}
+	sets.engaged.Reraise = {ammo="Aurgelmir orb",
+		head="Twilight Helm",neck="Torero Torque",ear1="Telos earring",ear2="Sherida earring",
+		body="Twilight Mail",hands="Sulevia's gauntlets +2",ring1="Moonlight Ring",ring2="Defending Ring",
+		back=gear.DrgBack.TP,waist="Dynamic Belt",legs="Flamma dirs +2",feet="Flamma gambieras +2"}
+	sets.engaged.Acc.Reraise = {ammo="Aurgelmir orb",
+		head="Twilight Helm",neck="Torero Torque",ear1="Telos earring",ear2="Sherida earring",
+		body="Twilight Mail",hands="Sulevia's gauntlets +2",ring1="Moonlight Ring",ring2="Defending Ring",
+		back=gear.DrgBack.TP,waist="Dynamic Belt",legs="Flamma dirs +2",feet="Flamma gambieras +2"}
 		
 	-- Melee sets for in Adoulin, which has an extra 2% Haste from Ionis.
-	sets.engaged.Adoulin = {ammo="Thew Bomblet",
-		head="Yaoyotl Helm",neck="Asperity Necklace",ear1="Bladeborn Earring",ear2="Steelflash Earring",
-		body="Enif Corazza",hands="Ogier's Gauntlets",ring1="Rajas Ring",ring2="K'ayres ring",
-		back="Atheling mantle",waist="Goading Belt",legs="Cizin Breeches",feet="Ejekamal boots"}
-	sets.engaged.Adoulin.Acc = {ammo="Thew Bomblet",
-		head="Yaoyotl Helm",neck="Asperity Necklace",ear1="Bladeborn Earring",ear2="Steelflash Earring",
-		body="Enif Corazza",hands="Ogier's Gauntlets",ring1="Rajas Ring",ring2="Mars's Ring",
-		back="Atheling mantle",waist="Dynamic Belt",legs="Cizin Breeches",feet="Ejekamal boots"}
-	sets.engaged.Adoulin.Multi = {ammo="Thew Bomblet",
-		head="Yaoyotl Helm",neck="Asperity Necklace",ear1="Bladeborn Earring",ear2="Steelflash Earring",
-		body="Enif Corazza",hands="Ares' Gauntlets +1",ring1="Rajas Ring",ring2="K'ayres ring",
-		back="Atheling mantle",waist="Windbuffet belt",legs="Cizin Breeches",feet="Ejekamal boots"}
-	sets.engaged.Adoulin.Multi.PDT = {ammo="Thew Bomblet",
-		head="Yaoyotl Helm",neck="Asperity Necklace",ear1="Bladeborn Earring",ear2="Steelflash Earring",
-		body="Enif Corazza",hands="Ogier's Gauntlets",ring1="Rajas Ring",ring2="Mars's Ring",
-		back="Letalis Mantle",waist="Dynamic Belt",legs="Cizin Breeches",feet="Cizin Graves"}
-	sets.engaged.Adoulin.Multi.Reraise = {ammo="Thew Bomblet",
-		head="Twilight Helm",neck="Asperity Necklace",ear1="Bladeborn Earring",ear2="Steelflash Earring",
-		body="Twilight Breastplate",hands="Ogier's Gauntlets",ring1="Rajas Ring",ring2="Mars's Ring",
-		back="Letalis Mantle",waist="Dynamic Belt",legs="Cizin Breeches",feet="Ejekamal boots"}
-	sets.engaged.Adoulin.PDT = {ammo="Thew Bomblet",
-		head="Yaoyotl Helm",neck="Twilight Torque",ear1="Bladeborn Earring",ear2="Steelflash Earring",
-		body="Mikinaak Breastplate",hands="Ogier's Gauntlets",ring1="Dark Ring",ring2="Dark Ring",
-		back="Mollusca Mantle",waist="Dynamic Belt",legs="Cizin Breeches",feet="Ejekamal boots"}
-	sets.engaged.Adoulin.Acc.PDT = {ammo="Thew Bomblet",
-		head="Yaoyotl Helm",neck="Twilight Torque",ear1="Bladeborn Earring",ear2="Steelflash Earring",
-		body="Mikinaak Breastplate",hands="Ogier's Gauntlets",ring1="Dark Ring",ring2="Dark Ring",
-		back="Mollusca Mantle",waist="Dynamic Belt",legs="Cizin Breeches",feet="Ejekamal boots"}
-	sets.engaged.Adoulin.Reraise = {ammo="Thew Bomblet",
-		head="Twilight Helm",neck="Twilight Torque",ear1="Bladeborn Earring",ear2="Steelflash Earring",
-		body="Twilight Mail",hands="Ogier's Gauntlets",ring1="Dark Ring",ring2="Dark Ring",
-		back="Letalis Mantle",waist="Dynamic Belt",legs="Cizin Breeches",feet="Ejekamal boots"}
-	sets.engaged.Adoulin.Acc.Reraise = {ammo="Thew Bomblet",
-		head="Twilight Helm",neck="Twilight Torque",ear1="Bladeborn Earring",ear2="Steelflash Earring",
-		body="Twilight Mail",hands="Ogier's Gauntlets",ring1="Dark Ring",ring2="Dark Ring",
-		back="Letalis Mantle",waist="Dynamic Belt",legs="Cizin Breeches",feet="Ejekamal boots"}
+	sets.engaged.Adoulin = {ammo="Aurgelmir orb",
+		head="Flamma zucchetto +2",neck="Shulmanu Collar",ear1="Telos earring",ear2="Sherida earring",
+		body="Sulevia's platemail +2",hands="Sulevia's gauntlets +2",ring1="Flamma ring",ring2="Niqmaddu ring",
+		back=gear.DrgBack.TP,waist="Ioskeha belt +1",legs="Flamma dirs +2",feet="Flamma gambieras +2"}
+	sets.engaged.Adoulin.Acc = {ammo="Aurgelmir orb",
+		head="Flamma zucchetto +2",neck="Shulmanu Collar",ear1="Telos earring",ear2="Sherida earring",
+		body="Sulevia's platemail +2",hands="Sulevia's gauntlets +2",ring1="Flamma ring",ring2="Niqmaddu ring",
+		back=gear.DrgBack.TP,waist="Dynamic Belt",legs="Flamma dirs +2",feet="Flamma gambieras +2"}
+	sets.engaged.Adoulin.Multi = {ammo="Aurgelmir orb",
+		head="Flamma zucchetto +2",neck="Shulmanu Collar",ear1="Telos earring",ear2="Sherida earring",
+		body="Sulevia's platemail +2",hands="Sulevia's gauntlets +2",ring1="Flamma ring",ring2="Niqmaddu ring",
+		back=gear.DrgBack.TP,waist="Windbuffet belt",legs="Flamma dirs +2",feet="Flamma gambieras +2"}
+	sets.engaged.Adoulin.Multi.PDT = {ammo="Aurgelmir orb",
+		head="Flamma zucchetto +2",neck="Shulmanu Collar",ear1="Telos earring",ear2="Sherida earring",
+		body="Sulevia's platemail +2",hands="Sulevia's gauntlets +2",ring1="Flamma ring",ring2="Niqmaddu ring",
+		back=gear.DrgBack.TP,waist="Dynamic Belt",legs="Flamma dirs +2",feet="Cizin Graves"}
+	sets.engaged.Adoulin.Multi.Reraise = {ammo="Aurgelmir orb",
+		head="Twilight Helm",neck="Shulmanu Collar",ear1="Telos earring",ear2="Sherida earring",
+		body="Twilight Breastplate",hands="Sulevia's gauntlets +2",ring1="Flamma ring",ring2="Niqmaddu ring",
+		back=gear.DrgBack.TP,waist="Dynamic Belt",legs="Flamma dirs +2",feet="Flamma gambieras +2"}
+	sets.engaged.Adoulin.PDT = {ammo="Aurgelmir orb",
+		head="Flamma zucchetto +2",neck="Twilight Torque",ear1="Telos earring",ear2="Sherida earring",
+		body="Mikinaak Breastplate",hands="Sulevia's gauntlets +2",ring1="Moonlight Ring",ring2="Defending Ring",
+		back="Mollusca Mantle",waist="Dynamic Belt",legs="Flamma dirs +2",feet="Flamma gambieras +2"}
+	sets.engaged.Adoulin.Acc.PDT = {ammo="Aurgelmir orb",
+		head="Flamma zucchetto +2",neck="Twilight Torque",ear1="Telos earring",ear2="Sherida earring",
+		body="Mikinaak Breastplate",hands="Sulevia's gauntlets +2",ring1="Moonlight Ring",ring2="Defending Ring",
+		back="Mollusca Mantle",waist="Dynamic Belt",legs="Flamma dirs +2",feet="Flamma gambieras +2"}
+	sets.engaged.Adoulin.Reraise = {ammo="Aurgelmir orb",
+		head="Twilight Helm",neck="Twilight Torque",ear1="Telos earring",ear2="Sherida earring",
+		body="Twilight Mail",hands="Sulevia's gauntlets +2",ring1="Moonlight Ring",ring2="Defending Ring",
+		back=gear.DrgBack.TP,waist="Dynamic Belt",legs="Flamma dirs +2",feet="Flamma gambieras +2"}
+	sets.engaged.Adoulin.Acc.Reraise = {ammo="Aurgelmir orb",
+		head="Twilight Helm",neck="Twilight Torque",ear1="Telos earring",ear2="Sherida earring",
+		body="Twilight Mail",hands="Sulevia's gauntlets +2",ring1="Moonlight Ring",ring2="Defending Ring",
+		back=gear.DrgBack.TP,waist="Dynamic Belt",legs="Flamma dirs +2",feet="Flamma gambieras +2"}
 
 end
 
@@ -338,10 +342,12 @@ function job_pet_post_midcast(spell, action, spellMap, eventArgs)
 end
 
 -- Set eventArgs.handled to true if we don't want any automatic gear equipping to be done.
-function job_aftercast(spell, action, spellMap, eventArgs)
-if state.DefenseMode == 'Reraise' or
-		(state.Defense.Active and state.Defense.Type == 'Physical' and state.Defense.PhysicalMode == 'Reraise') then
-	end
+function job_post_midcast(spell, action, spellMap, eventArgs)
+    -- Effectively lock these items in place.
+    if state.HybridMode.value == 'Reraise' or
+        (state.DefenseMode.value == 'Physical' and state.PhysicalDefenseMode.value == 'Reraise') then
+        equip(sets.Reraise)
+    end
 end
 
 -- Run after the default aftercast() is done.

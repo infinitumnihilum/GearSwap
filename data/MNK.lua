@@ -227,7 +227,7 @@ function init_gear_sets()
 
     -- Defensive melee hybrid sets
     sets.engaged.PDT = {ammo="Aurgelmir orb",
-        head="Adhemar bonnet +1",neck="Twilight Torque",ear1="Telos earring",ear2="Sherida earring",
+        head="Adhemar bonnet +1",neck="Monk's Nodowa +2",ear1="Telos earring",ear2="Sherida earring",
         body="Hesychast's Cyclas +3",hands="Otronif Gloves",ring1="Defending Ring",ring2="Epona's Ring",
         back=gear.MnkBack.TP,waist="Moonbow belt +1",legs="Malignance Tights",feet="Anchorite's gaiters +3"}
     sets.engaged.SomeAcc.PDT = {ammo="Honed Tathlum",

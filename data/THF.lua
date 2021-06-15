@@ -82,12 +82,12 @@ function init_gear_sets()
     sets.buff['Sneak Attack'] = {ammo="Qirmiz Tathlum",
         head="Pillager's Bonnet +1",neck="Assassin's gorget +1",ear1="Sherida earring",ear2="Telos Earring",
         body="Pillager's Vest +3",hands="Adhemar wristbands +1",ring1="Rajas Ring",ring2="Epona's Ring",
-        back=gear.ThfBack.TP,waist="Windbuffet Belt +1",legs="Pillager's Culottes +2",feet="Plunderer's Poulaines +1"}
+        back=gear.ThfBack.TP,waist="Windbuffet Belt +1",legs="Pillager's Culottes +2",feet="Plunderer's poulaines +2"}
 
     sets.buff['Trick Attack'] = {ammo="Qirmiz Tathlum",
         head="Pillager's Bonnet +1",neck="Assassin's gorget +1",ear1="Sherida earring",ear2="Telos Earring",
         body="Pillager's Vest +3",hands="Adhemar wristbands +1",ring1="Stormsoul Ring",ring2="Epona's Ring",
-        back=gear.ThfBack.TP,waist="Windbuffet Belt +1",legs="Pillager's Culottes +2",feet="Plunderer's Poulaines +1"}
+        back=gear.ThfBack.TP,waist="Windbuffet Belt +1",legs="Pillager's Culottes +2",feet="Plunderer's poulaines +2"}
 
     -- Actions we want to use to tag TH.
     sets.precast.Step = sets.TreasureHunter
@@ -118,7 +118,7 @@ function init_gear_sets()
     sets.precast.Waltz = {ammo="Sonia's Plectrum",
         head="Adhemar bonnet +1",
         body="Pillager's Vest +3",hands="Adhemar wristbands +1",ring1="Asklepian Ring",
-        back="Iximulew Cape",waist="Caudata Belt",legs="Pillager's Culottes +2",feet="Plunderer's poulaines +1"}
+        back="Iximulew Cape",waist="Caudata Belt",legs="Pillager's Culottes +2",feet="Plunderer's poulaines +2"}
 
     -- Don't need any special gear for Healing Waltz.
     sets.precast.Waltz['Healing Waltz'] = {}
@@ -139,8 +139,8 @@ function init_gear_sets()
     -- Default set for any weaponskill that isn't any more specifically defined
     sets.precast.WS = {ammo="Aurgelmir orb",
         head="Adhemar bonnet +1",neck=gear.ElementalGorget,ear1="Bladeborn Earring",ear2="Steelflash Earring",
-        body="Pillager's Vest +3",hands="Adhemar wristbands +1",ring1="Rajas Ring",ring2="Epona's Ring",
-        back=gear.ThfBack.CritWS,waist="Caudata Belt",legs="Manibozho Brais",feet="adhemar gamashes"}
+        body="Pillager's Vest +3",hands="Adhemar wristbands +1",ring1="Ilabrat Ring",ring2="Mummu Ring",
+        back=gear.ThfBack.CritWS,waist="Caudata Belt",legs="Pilager's culottes +2",feet="adhemar gamashes"}
     sets.precast.WS.Acc = set_combine(sets.precast.WS, {ammo="Honed Tathlum", back="Letalis Mantle"})
 
     -- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found.
@@ -283,42 +283,42 @@ function init_gear_sets()
     -- Normal melee group
     sets.engaged = {ammo="Aurgelmir orb",
         head="Adhemar bonnet +1",neck="Assassin's gorget +1",ear1="Sherida earring",ear2="Telos Earring",
-        body="Pillager's Vest +3",hands="Adhemar wristbands +1",ring1="Rajas Ring",ring2="Epona's Ring",
-        back=gear.ThfBack.TP,waist="Windbuffet Belt +1",legs="Samnuha Tights",feet="Plunderer's poulaines +1"}
+        body="Pillager's Vest +3",hands="Adhemar wristbands +1",ring1="Ilabrat Ring",ring2="Epona's Ring",
+        back=gear.ThfBack.TP,waist="Windbuffet Belt +1",legs="Samnuha Tights",feet="Plunderer's poulaines +2"}
     sets.engaged.Acc = {ammo="Honed Tathlum",
         head="Adhemar bonnet +1",neck="Assassin's gorget +1",ear1="Sherida earring",ear2="Telos Earring",
-        body="Pillager's Vest +3",hands="Adhemar wristbands +1",ring1="Rajas Ring",ring2="Epona's Ring",
-        back=gear.ThfBack.TP,waist="Windbuffet Belt +1",legs="Pillager's Culottes +2",feet="Plunderer's poulaines +1"}
+        body="Pillager's Vest +3",hands="Adhemar wristbands +1",ring1="Moonlight Ring",ring2="Epona's Ring",
+        back=gear.ThfBack.TP,waist="Windbuffet Belt +1",legs="Pillager's Culottes +2",feet="Plunderer's poulaines +2"}
         
     -- Mod set for trivial mobs (Skadi+1)
     sets.engaged.Mod = {ammo="Aurgelmir orb",
         head="Adhemar bonnet +1",neck="Assassin's gorget +1",ear1="Sherida earring",ear2="Telos Earring",
-        body="Pillager's Vest +3",hands="Adhemar wristbands +1",ring1="Rajas Ring",ring2="Epona's Ring",
-        back=gear.ThfBack.TP,waist="Windbuffet Belt +1",legs="Pillager's Culottes +2",feet="Plunderer's poulaines +1"}
+        body="Pillager's Vest +3",hands="Adhemar wristbands +1",ring1="Ilabrat Ring",ring2="Epona's Ring",
+        back=gear.ThfBack.TP,waist="Windbuffet Belt +1",legs="Pillager's Culottes +2",feet="Plunderer's poulaines +2"}
 
     -- Mod set for trivial mobs (Thaumas)
     sets.engaged.Mod2 = {ammo="Aurgelmir orb",
         head="Adhemar bonnet +1",neck="Assassin's gorget +1",ear1="Sherida earring",ear2="Telos Earring",
-        body="Pillager's Vest +3",hands="Adhemar wristbands +1",ring1="Rajas Ring",ring2="Epona's Ring",
-        back=gear.ThfBack.TP,waist="Windbuffet Belt +1",legs="Pillager's Culottes +2",feet="Plunderer's poulaines +1"}
+        body="Pillager's Vest +3",hands="Adhemar wristbands +1",ring1="Ilabrat Ring",ring2="Epona's Ring",
+        back=gear.ThfBack.TP,waist="Windbuffet Belt +1",legs="Pillager's Culottes +2",feet="Plunderer's poulaines +2"}
 
     sets.engaged.Evasion = {ammo="Aurgelmir orb",
         head="Adhemar bonnet +1",neck="Assassin's gorget +1",ear1="Sherida earring",ear2="Telos Earring",
         body="Pillager's Vest +3",hands="Adhemar wristbands +1",ring1="Beeline Ring",ring2="Epona's Ring",
-        back="Canny Cape",waist="Windbuffet Belt +1",legs="Pillager's Culottes +2",feet="Plunderer's poulaines +1"}
+        back="Canny Cape",waist="Windbuffet Belt +1",legs="Pillager's Culottes +2",feet="Plunderer's poulaines +2"}
     sets.engaged.Acc.Evasion = {ammo="Honed Tathlum",
         head="Adhemar bonnet +1",neck="Assassin's gorget +1",ear1="Sherida earring",ear2="Telos Earring",
         body="Pillager's Vest +3",hands="Adhemar wristbands +1",ring1="Beeline Ring",ring2="Epona's Ring",
-        back="Canny Cape",waist="Windbuffet Belt +1",legs="Pillager's Culottes +2",feet="Plunderer's poulaines +1"}
+        back="Canny Cape",waist="Windbuffet Belt +1",legs="Pillager's Culottes +2",feet="Plunderer's poulaines +2"}
 
     sets.engaged.PDT = {ammo="Aurgelmir orb",
         head="Adhemar bonnet +1",neck="Twilight Torque",ear1="Sherida earring",ear2="Telos Earring",
         body="Pillager's Vest +3",hands="Adhemar wristbands +1",ring1="Defending Ring",ring2="Epona's Ring",
-        back="Iximulew Cape",waist="Windbuffet Belt +1",legs="Malignance Tights",feet="Plunderer's poulaines +1"}
+        back="Iximulew Cape",waist="Windbuffet Belt +1",legs="Malignance Tights",feet="Plunderer's poulaines +2"}
     sets.engaged.Acc.PDT = {ammo="Honed Tathlum",
         head="Adhemar bonnet +1",neck="Twilight Torque",ear1="Sherida earring",ear2="Telos Earring",
         body="Pillager's Vest +3",hands="Adhemar wristbands +1",ring1="Defending Ring",ring2="Epona's Ring",
-        back="Canny Cape",waist="Windbuffet Belt +1",legs="Malignance Tights",feet="Plunderer's poulaines +1"}
+        back="Canny Cape",waist="Windbuffet Belt +1",legs="Malignance Tights",feet="Plunderer's poulaines +2"}
 
 end
 

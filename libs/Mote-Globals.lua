@@ -60,6 +60,10 @@ function define_global_sets()
 	--Pld Back Pieces
 	gear.PldBack={}
 	gear.PldBack.TP = {name="Rudianos's Mantle", augments={'HP+60','Accuracy+20 Attack+20','Accuracy+10','"Store TP"+10','Damage taken-5%',}}
+	
+	--Drg Back Pieces
+	gear.DrgBack={}
+	gear.DrgBack.TP = {name="Brigantia's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+5','"Dbl.Atk."+10','Phys. dmg. taken-10%',}}
 end
 
 -------------------------------------------------------------------------------------------------------------------

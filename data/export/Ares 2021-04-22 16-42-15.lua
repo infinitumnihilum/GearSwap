@@ -1,0 +1,17 @@
+sets.exported={
+    main={ name="Trishula", augments={'Path: A',}},
+    sub="Utu Grip",
+    ammo="Aurgelmir Orb",
+    head="Flam. Zucchetto +2",
+    body="Sulevia's Plate. +2",
+    hands="Ares' Gauntlets +1",
+    legs={ name="Carmine Cuisses +1", augments={'HP+68','STR+11','INT+11',}},
+    feet="Flam. Gambieras +2",
+    neck="Wiglen Gorget",
+    waist="Ioskeha Belt +1",
+    left_ear="Telos Earring",
+    right_ear="Sherida Earring",
+    left_ring="Sheltered Ring",
+    right_ring="Paguroidea Ring",
+    back={ name="Brigantia's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+5','"Dbl.Atk."+10','Phys. dmg. taken-10%',}},
+}
